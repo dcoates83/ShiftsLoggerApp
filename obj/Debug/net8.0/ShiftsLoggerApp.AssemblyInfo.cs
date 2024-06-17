@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ShiftsLoggerApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+250bf929c9f4a92423bd85bd0b5b006034168476")]
 [assembly: System.Reflection.AssemblyProductAttribute("ShiftsLoggerApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ShiftsLoggerApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

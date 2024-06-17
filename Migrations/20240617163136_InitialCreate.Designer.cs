@@ -12,7 +12,7 @@ using ShiftsLoggerApp.Data;
 namespace ShiftsLoggerApp.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20240611171457_InitialCreate")]
+    [Migration("20240617163136_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
