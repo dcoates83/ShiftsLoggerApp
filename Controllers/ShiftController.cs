@@ -19,9 +19,10 @@ namespace ShiftsLoggerApp.Controllers
         }
 
         [HttpGet]
-        public List<ShiftModel> GetShifts()
+        public async Task<IActionResult> GetShifts()
         {
-            return _service.GetShifts();
+            var shifts = await _service.GetShifts();
+            return Ok(shifts);
         }
     }
 }

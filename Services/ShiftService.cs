@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using Microsoft.EntityFrameworkCore;
 using ShiftsLoggerApp.Data;
 using ShiftsLoggerApp.Models;
 
@@ -8,7 +9,7 @@ namespace ShiftsLoggerApp.Services
 {
     public interface IShiftService
     {
-        List<ShiftModel> GetShifts();
+        Task<List<ShiftModel>> GetShifts();
     }
 
     public class ShiftService : IShiftService
@@ -20,9 +21,9 @@ namespace ShiftsLoggerApp.Services
             _context = context;
         }
 
-        public List<ShiftModel> GetShifts()
+        public Task<List<ShiftModel>> GetShifts()
         {
-            return _context.Shifts.ToList();
+            return _context.Shifts.ToListAsync();
         }
     }
 }

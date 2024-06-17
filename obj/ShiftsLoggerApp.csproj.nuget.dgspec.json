@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\DevonCoates\\src\\practice\\ShiftsLoggerApp\\ShiftsLoggerApp.csproj": {}
+    "c:\\Users\\DevonCoates\\src\\practice\\ShiftsLoggerApp\\ShiftsLoggerApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\DevonCoates\\src\\practice\\ShiftsLoggerApp\\ShiftsLoggerApp.csproj": {
+    "c:\\Users\\DevonCoates\\src\\practice\\ShiftsLoggerApp\\ShiftsLoggerApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\DevonCoates\\src\\practice\\ShiftsLoggerApp\\ShiftsLoggerApp.csproj",
+        "projectUniqueName": "c:\\Users\\DevonCoates\\src\\practice\\ShiftsLoggerApp\\ShiftsLoggerApp.csproj",
         "projectName": "ShiftsLoggerApp",
-        "projectPath": "C:\\Users\\DevonCoates\\src\\practice\\ShiftsLoggerApp\\ShiftsLoggerApp.csproj",
+        "projectPath": "c:\\Users\\DevonCoates\\src\\practice\\ShiftsLoggerApp\\ShiftsLoggerApp.csproj",
         "packagesPath": "C:\\Users\\DevonCoates\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\DevonCoates\\src\\practice\\ShiftsLoggerApp\\obj\\",
+        "outputPath": "c:\\Users\\DevonCoates\\src\\practice\\ShiftsLoggerApp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\DevonCoates\\AppData\\Roaming\\NuGet\\NuGet.Config",

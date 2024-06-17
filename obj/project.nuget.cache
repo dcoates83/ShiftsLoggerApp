@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "zAdG90kHcnrWiMbYnPGKtvPJzDXaX2VVwxFORPzYp+f0iKne39ZremmE+SCOXLahhxGKzTbMtBfLvpNfpX0D/w==",
+  "dgSpecHash": "0lcwdPoKxa4ChWusc18sXsBFfjW9+Ql4dbpw8p7nn5OGLYgdaF2TlCOkaTTpTX20gZ0/7znGCRvHnTB1Cx23ww==",
   "success": true,
-  "projectFilePath": "C:\\Users\\DevonCoates\\src\\practice\\ShiftsLoggerApp\\ShiftsLoggerApp.csproj",
+  "projectFilePath": "c:\\Users\\DevonCoates\\src\\practice\\ShiftsLoggerApp\\ShiftsLoggerApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\DevonCoates\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\DevonCoates\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
