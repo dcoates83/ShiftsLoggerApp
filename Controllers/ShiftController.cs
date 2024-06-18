@@ -24,5 +24,51 @@ namespace ShiftsLoggerApp.Controllers
             var shifts = await _service.GetShifts();
             return Ok(shifts);
         }
+
+        [HttpGet("{id}")]
+        public async Task<IActionResult> GetShiftById(int id)
+        {
+            var shift = await _service.GetShiftById(id);
+            if (shift == null)
+            {
+                return NotFound();
+            }
+            return Ok(shift);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> CreateShift([FromBody] ShiftModel shift)
+        {
+            var newShift = await _service.CreateShift(shift);
+            return CreatedAtAction(nameof(GetShiftById), new { id = newShift.Id }, newShift);
+        }
+
+        [HttpPut("{id}")]
+        public async Task<IActionResult> UpdateShift(int id, [FromBody] ShiftModel shift)
+        {
+            try
+            {
+                var updatedShift = await _service.UpdateShift(id, shift);
+                return Ok(updatedShift);
+            }
+            catch (Exception ex)
+            {
+                return NotFound(ex.Message);
+            }
+        }
+
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> DeleteShift(int id)
+        {
+            try
+            {
+                var deletedShift = await _service.DeleteShift(id);
+                return Ok(deletedShift);
+            }
+            catch (Exception ex)
+            {
+                return NotFound(ex.Message);
+            }
+        }
     }
 }
