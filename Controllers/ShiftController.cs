@@ -39,6 +39,18 @@ namespace ShiftsLoggerApp.Controllers
         [HttpPost]
         public async Task<IActionResult> CreateShift([FromBody] ShiftModel shift)
         {
+            List<string> errors = new List<string>();
+            if (!ModelState.IsValid)
+            {
+                foreach (var value in ModelState.Values)
+                {
+                    foreach (var error in value.Errors)
+                    {
+                        errors.Add(error.ErrorMessage);
+                    }
+                }
+                return BadRequest(errors);
+            }
             var newShift = await _service.CreateShift(shift);
             return CreatedAtAction(nameof(GetShiftById), new { id = newShift.Id }, newShift);
         }
